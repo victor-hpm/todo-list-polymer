@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1, user-scalable=yes">
+
+    <title>todolist</title>
+    <meta name="description" content="aplicacion todolist">
+
+    <!-- See https://goo.gl/OOhYW5 -->
+    <link rel="manifest" href="/manifest.json">
+
+    <script src="/bower_components/webcomponentsjs/webcomponents-loader.js"></script>
+
+    <link rel="import" href="/src/todolist-app/todolist-app.html">
+
+    <style>
+        body {
+            /* background: chartreuse; */
+            background: rgba(210, 255, 82, 1);
+            background: -moz-linear-gradient(-45deg, rgba(210, 255, 82, 1) 0%, rgba(13, 142, 222, 1) 78%, rgba(13, 142, 222, 1) 100%);
+            background: -webkit-gradient(left top, right bottom, color-stop(0%, rgba(210, 255, 82, 1)), color-stop(78%, rgba(13, 142, 222, 1)), color-stop(100%, rgba(13, 142, 222, 1)));
+            background: -webkit-linear-gradient(-45deg, rgba(210, 255, 82, 1) 0%, rgba(13, 142, 222, 1) 78%, rgba(13, 142, 222, 1) 100%);
+            background: -o-linear-gradient(-45deg, rgba(210, 255, 82, 1) 0%, rgba(13, 142, 222, 1) 78%, rgba(13, 142, 222, 1) 100%);
+            background: -ms-linear-gradient(-45deg, rgba(210, 255, 82, 1) 0%, rgba(13, 142, 222, 1) 78%, rgba(13, 142, 222, 1) 100%);
+            background: linear-gradient(135deg, rgba(210, 255, 82, 1) 0%, rgba(13, 142, 222, 1) 78%, rgba(13, 142, 222, 1) 100%);
+            filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#d2ff52', endColorstr='#0d8ede', GradientType=1);
+            background-repeat: no-repeat;
+        }
+    </style>
+</head>
+
+<body>
+    <todolist-app></todolist-app>
+</body>
+
+</html>

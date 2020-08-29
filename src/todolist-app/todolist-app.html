@@ -1,0 +1,45 @@
+<link rel="import" href="../../bower_components/polymer/polymer-element.html">
+
+
+<dom-module id="todolist-app">
+    <template>
+    <style>
+      :host {
+        display: block;
+      }
+      .header {
+        text-align: center;
+      }
+    </style>
+
+    <div class="app">
+      <header class="header">
+        <img src="./images/ico-logo.png" alt="Logo Ironbit" width="100px">
+        <h3>Frontent test</h3>
+      </header>
+    </div>
+
+  </template>
+
+    <script>
+        /**
+         * @customElement
+         * @polymer
+         */
+        class TodolistApp extends Polymer.Element {
+            static get is() {
+                return 'todolist-app';
+            }
+            static get properties() {
+                return {
+                    prop1: {
+                        type: String,
+                        value: 'todolist-app'
+                    }
+                };
+            }
+        }
+
+        window.customElements.define(TodolistApp.is, TodolistApp);
+    </script>
+</dom-module>

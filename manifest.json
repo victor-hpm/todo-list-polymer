@@ -1,0 +1,7 @@
+{
+  "name": "todolist",
+  "short_name": "todolist",
+  "description": "aplicacion todolist",
+  "start_url": "/",
+  "display": "standalone"
+}
