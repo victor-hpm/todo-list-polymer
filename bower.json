@@ -1,12 +1,14 @@
 {
-  "name": "todolist",
-  "description": "aplicacion todolist",
-  "main": "index.html",
-  "dependencies": {
-    "polymer": "Polymer/polymer#^2.0.0"
-  },
-  "devDependencies": {
-    "web-component-tester": "Polymer/web-component-tester#^6.0.0",
-    "webcomponentsjs": "webcomponents/webcomponentsjs#^1.0.0"
-  }
+    "name": "todolist",
+    "description": "aplicacion todolist",
+    "main": "index.html",
+    "dependencies": {
+        "polymer": "Polymer/polymer#^2.0.0",
+        "todo-add": "https://github.com/victor-hpm/todo-add.git#^1.0.0",
+        "todo-list": "https://github.com/victor-hpm/todo-list.git#^1.0.0"
+    },
+    "devDependencies": {
+        "web-component-tester": "Polymer/web-component-tester#^6.0.0",
+        "webcomponentsjs": "webcomponents/webcomponentsjs#^1.0.0"
+    }
 }

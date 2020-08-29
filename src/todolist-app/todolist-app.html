@@ -1,4 +1,6 @@
 <link rel="import" href="../../bower_components/polymer/polymer-element.html">
+<link rel="import" href="../../bower_components/todo-add/todo-add.html">
+<link rel="import" href="../../bower_components/todo-list/todo-list.html">
 
 
 <dom-module id="todolist-app">
@@ -6,17 +8,30 @@
     <style>
       :host {
         display: block;
-      }
-      .header {
         text-align: center;
       }
+
+      .app {
+        text-align: center;
+      }
+
+      todo-add,
+      todo-list {
+          padding-top: 1rem;
+          width: 60%;
+      }
+
+      
+
     </style>
 
     <div class="app">
-      <header class="header">
+      <div>
         <img src="./images/ico-logo.png" alt="Logo Ironbit" width="100px">
-        <h3>Frontent test</h3>
-      </header>
+        <h2>Frontent test</h2>
+      </div>
+        <todo-add tasks="{{tasks}}"></todo-add>
+        <todo-list tasks="{{tasks}}"></todo-list>
     </div>
 
   </template>
@@ -32,12 +47,17 @@
             }
             static get properties() {
                 return {
-                    prop1: {
-                        type: String,
-                        value: 'todolist-app'
+                    tasks: {
+                        type: Array,
+                        value: [],
+                        observer: 'checaruno'
                     }
                 };
             }
+            checaruno() {
+                console.log('observer', this.tasks);
+            }
+
         }
 
         window.customElements.define(TodolistApp.is, TodolistApp);
